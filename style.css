@@ -1,0 +1,374 @@
+/*
+ Theme Name:   chocolat Child
+ Theme URI:    http://harupress.jp/chocolat-child/
+ Description:  chocolat Child Theme
+ Author:       HARUNOBU OTA
+ Author URI:   http://harupress.jp
+ Template:     chocolat
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  chocolat-child
+*/
+
+
+.header {
+    display: table;
+    word-wrap: break-word;
+    width: 100%;
+}
+.header .site-title,
+.header .site-description {
+    display: table;
+}
+/* ------------------------------------
+4.1 - header
+------------------------------------ */
+
+
+.header .header-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+.header .header-top {
+    padding-left:0px;
+    padding-top:20px;
+    padding-right:0px;
+    padding-bottom:10px;
+    position: relative;
+}
+
+.header a.home-link {
+    display: block;
+}
+
+.header .site-title {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header #site-description {
+    font-size: 0.9em;
+    margin: 10px 0.2em 0;
+}
+
+.header .site-title,
+.header .site-description {
+    line-height: 1;
+}
+
+
+
+
+.header-top {
+    margin: 0;
+    padding: 0;
+    position: relative
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.header-logo {
+    float: left;
+    width: 30%;
+
+}
+.header-links {
+    float: left;
+    width: 30%;
+    left: 43%;
+    margin-top:185px;
+    position: absolute;
+}
+
+.header-title {
+    float: right;
+    width: 40%;
+
+}
+.header-center{
+    margin: 15px auto 25px;
+}
+.header-image{
+    width:100%;
+    height:340px;
+    padding:0;
+    margin:0;
+    background:#72a653;
+    line-height: 1.3;
+}
+
+
+
+.tel{
+    font-size: 30px;
+    color: #72a653;
+
+    margin-top: 0;
+    margin-left: 120px;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.inquiry{
+
+    margin-top: 0;
+    margin-left: 100px;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.eigyo{
+    font-size: 16px;
+    color: #000;
+
+    margin-top: 0;
+    margin-left: 80px;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+/* ------------------------------------
+3.3 - pagination
+------------------------------------ */
+
+.pagination,
+.post-pagination {
+    clear: both;
+    font-size: 0.8em;
+    margin: 30px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.pagination ul {
+    margin: 0;
+    padding: 0;
+}
+
+.pagination ul,
+.post-pagination div {
+    float: left;
+    list-style: none;
+    position: relative;
+    left: 50%;
+}
+
+.pagination ul li,
+.post-pagination span {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+.pagination span,
+.pagination a,
+.post-pagination span {
+    border-radius: 15px; /* 50% */
+    color: #fff;
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 0.5em;
+    text-align: center;
+    width: 30px;
+}
+
+.pagination a:hover {
+    background: #f56993;
+}
+
+.pagination span.current,
+.post-pagination span {
+    background: #895628;
+}
+
+.pagination span,
+.pagination a,
+.post-pagination a span {
+    background: #ba8d65;
+}
+
+/* ------------------------------------
+5.0 - Content Style
+------------------------------------ */
+
+#contents {
+    margin: 20px auto 0;
+    max-width: 1080px;
+}
+
+#content-inner section,
+#content-header,
+.widget {
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------
+5.2.3 - section-bottom
+------------------------------------ */
+
+/* entry_meta */
+section .entry_meta p {
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+section .entry_meta p:last-child {
+    margin-right: 0;
+}
+
+section .entry_meta p.entry-author {
+    float: right;
+}
+
+/* section-bottom entry_meta */
+section .section-bottom {
+    margin-top: 40px;
+}
+
+section .section-bottom:before {
+    content: "";
+    display: block;
+    height: 0px;
+}
+
+.section-bottom .section-bottom-inner {
+    background: #fff;
+    min-height: 0px;
+    padding: 0.5em 0 1em;
+}
+
+
+#top_info ul {
+    margin: 15px 0 30px;
+}
+
+#top_info ul li {
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+    width: 710px;
+    line-height: 1.7em;
+    border-bottom: 1px dotted #b2b2b2;
+}
+
+#top_info ul li:first-child {
+    padding-top: 10px;
+    border-top: 1px dotted #b2b2b2;
+}
+
+#top_info .news_date {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+#top_info .news_category {
+    display: block;
+    float: left;
+    width: 80px;
+    height: 15px;
+    margin-top: 3px;
+    margin-right: 12px;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #fff;
+    background-image: url("../images/category-tag-corners.png");
+    background-repeat: no-repeat;
+    background: #00a0e9;
+}
+
+#top_info .news_category.recruit {
+    background-color: #f3a059;
+}
+
+#top_info .news_category.release {
+    background-color: #0396c7;
+}
+
+#top_info .news_category.news {
+    background-color: #5a3686;
+}
+
+#top_info .news_category.ir {
+    background-color: #009678;
+}
+
+#top_info .cat-category-recruit {
+    background-image: url("../images/icon_recruitment.png");
+}
+
+#top_info .cat-category-release {
+    background-image: url("../images/icon_release.png");
+}
+
+#top_info .cat-category-news {
+    background-image: url("../images/icon_news.png");
+}
+
+#top_info .cat-category-ir {
+    background-image: url("../images/icon_ir.png");
+}
+
+#top_info h3 {
+    width: 520px;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+#top_info h3 a {
+    color: #3a7fcf;
+}
+
+#top_info h3 a:link, #top_info h3 a:visited {
+    color: #3a7fcf;
+}
+
+#top_info h3 a:hover, #top_info h3 a a:active {
+    color: #66a5ed;
+    text-decoration: underline;
+}
+
+/* ------------------------------------
+5.13 - paging
+------------------------------------ */
+
+.prevnext-page {
+    background-color:#fff9e6;
+}
+
+.footer {
+    background:#72a653;
+    height:150px;
+    line-height: 1.3;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.footer-title{
+    font-size:10px;
+}
+
+#footer-inner{
+    margin-left:10%;
+    margin-top:10px;
+ }
+.footer-inner2{
+    clear: both;
+}
+.footer-logo{
+    float:left;
+}
+#footer-top{
+    float:left;
+    margin-left:3%;
+}
